@@ -1,0 +1,21 @@
+functions:
+  tareasResolver:
+    type: resolver
+    handler:
+      code: src/resolvers/tareasResolver/handler.ts
+    schema: src/resolvers/tareasResolver/schema.graphql
+  task:
+    type: task
+    handler:
+      code: src/tasks/task/handler.ts
+  webhook:
+    type: webhook
+    handler:
+      code: src/webhooks/webhook/handler.ts
+    path: /webhook
+    method: POST
+  trigger:
+    type: trigger.before
+    handler:
+      code: src/triggers/trigger/handler.ts
+    operation: Users.create

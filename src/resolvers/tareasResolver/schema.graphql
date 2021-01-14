@@ -1,0 +1,21 @@
+# This file was generated using 8base CLI.
+#
+# To learn more about writing custom GraphQL resolver types, visit
+# the 8base documentation at:
+#
+# https://docs.8base.com/8base-console/custom-functions/resolvers
+#
+ type items {
+   titulo: String
+   contenido: String
+   estado: Boolean
+   id: ID
+ }
+ input task {
+   titulo: String
+   contenido: String
+   estado: Boolean
+ }
+extend type Mutation {
+  tareasResolver(id:ID, task:task): items
+}

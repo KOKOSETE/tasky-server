@@ -1,0 +1,15 @@
+{
+  "data": {
+    "task":
+      {
+      "titulo": "editada",
+      "contenido": "editada",
+      "estado": true
+     },
+  "id":"ckjwb7qrr03yp07l40n3e477k"
+  },
+  "headers": {
+    "x-header-1": "header value"
+  },
+  "body": "{\"foo\":\"bar\"}"
+}
